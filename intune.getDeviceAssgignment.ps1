@@ -35,7 +35,7 @@ function Get-AuthToken {
     Add-Type -Path $adalforms
     # [System.Reflection.Assembly]::LoadFrom($adal) | Out-Null
     # [System.Reflection.Assembly]::LoadFrom($adalforms) | Out-Null
-    $clientId = "f6c04452-a30f-4537-9fdb-01401a5a62dd"
+    $clientId = "" #the PowerShell Intune Graph app needs to be registered manually - see https://learn.microsoft.com/en-us/answers/questions/1659638/weve-detected-a-microsoft-intune-powershell-script
     $redirectUri = "urn:ietf:wg:oauth:2.0:oob"
     $resourceAppIdURI = "https://graph.microsoft.com"
     $authority = "https://login.microsoftonline.com/$Tenant"
